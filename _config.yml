@@ -1,3 +1,13 @@
-theme: jekyll-theme-minimal
 title: Quantify
 description: Controla tu dinero — Fondos Dharma
+url: https://quantifycash.app
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "legal"
+
+exclude:
+  - plan.md
