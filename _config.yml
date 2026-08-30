@@ -2,6 +2,13 @@ title: Quantify
 description: Controla tu dinero — Fondos Dharma
 url: https://quantifycash.app
 
+# Jekyll ignora por defecto las carpetas que empiezan con guion bajo.
+# La versión web de Expo guarda todo su JavaScript en app/_expo/, así que
+# hay que incluirla explícitamente o la app carga en blanco.
+include:
+  - _expo
+  - app/_expo
+
 defaults:
   - scope:
       path: ""
@@ -11,3 +18,4 @@ defaults:
 
 exclude:
   - plan.md
+  - PUBLICAR_VERSION_WEB.md
