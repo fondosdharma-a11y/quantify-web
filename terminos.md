@@ -6,7 +6,7 @@
 
 Al descargar o usar Quantify aceptas estos términos. Si no estás de acuerdo, no uses la aplicación.
 
-Quantify es desarrollada y operada por **Fondos Dharma**. Para cualquier consulta: fondos.dharma@gmail.com
+Quantify es desarrollada y operada por **Juan Pablo Arellano Elizalde**. Para cualquier consulta: fondos.dharma@gmail.com
 
 ## 2. Qué es Quantify
 
@@ -39,13 +39,13 @@ Si decides crear una cuenta:
 
 Quantify ofrece funciones gratuitas y planes de pago opcionales.
 
-**Cobro.** Las suscripciones se procesan a través de App Store o Google Play, según la tienda desde la que hayas descargado la aplicación. Fondos Dharma no recibe ni almacena tus datos de pago en ningún momento.
+**Cobro.** Las suscripciones se procesan a través de App Store o Google Play, según la tienda desde la que hayas descargado la aplicación. Juan Pablo Arellano Elizalde no recibe ni almacena tus datos de pago en ningún momento.
 
 **Renovación automática.** Las suscripciones se renuevan automáticamente al final de cada periodo, salvo que canceles al menos 24 horas antes del vencimiento. El cargo de renovación se aplica dentro de las 24 horas previas al término del periodo vigente.
 
 **Cómo cancelar.** Puedes cancelar en cualquier momento desde los ajustes de tu cuenta de App Store o Google Play. Cancelar detiene renovaciones futuras; conservas el acceso hasta que termine el periodo ya pagado.
 
-**Reembolsos.** Los reembolsos se rigen por las políticas de la tienda correspondiente, no por Fondos Dharma. Debes solicitarlos directamente a Apple o Google.
+**Reembolsos.** Los reembolsos se rigen por las políticas de la tienda correspondiente, no por Juan Pablo Arellano Elizalde. Debes solicitarlos directamente a Apple o Google.
 
 **Cambios de precio.** Si modificamos los precios, te lo notificaremos con antelación. Los cambios no afectan al periodo que ya pagaste.
 
@@ -87,7 +87,7 @@ Eres responsable de conservar respaldos de tu información. Aunque ofrecemos res
 
 ## 10. Propiedad intelectual
 
-Quantify, su código, diseño, marca y contenidos son propiedad de Fondos Dharma. Los datos financieros que tú registras son tuyos y puedes exportarlos en cualquier momento.
+Quantify, su código, diseño, marca y contenidos son propiedad de Juan Pablo Arellano Elizalde. Los datos financieros que tú registras son tuyos y puedes exportarlos en cualquier momento.
 
 El nombre "CASHFLOW" y el juego del mismo nombre son marcas registradas de sus respectivos propietarios. Quantify es un desarrollo independiente inspirado en el concepto de estado financiero personal, sin afiliación con dichas marcas.
 
@@ -99,7 +99,7 @@ Si descontinuamos el servicio de forma permanente, te avisaremos con antelación
 
 ## 12. Limitación de responsabilidad
 
-En la máxima medida permitida por la ley aplicable, Fondos Dharma no será responsable por pérdidas económicas, pérdida de datos, lucro cesante ni daños indirectos derivados del uso de Quantify, incluidas las decisiones financieras que tomes basándote en la información que la aplicación muestre.
+En la máxima medida permitida por la ley aplicable, Juan Pablo Arellano Elizalde no será responsable por pérdidas económicas, pérdida de datos, lucro cesante ni daños indirectos derivados del uso de Quantify, incluidas las decisiones financieras que tomes basándote en la información que la aplicación muestre.
 
 Nuestra responsabilidad total, en cualquier caso, no excederá el monto que hayas pagado por la aplicación en los doce meses previos al hecho que origine la reclamación.
 
@@ -115,7 +115,7 @@ Estos términos se rigen por las leyes de los Estados Unidos Mexicanos. Cualquie
 
 ## 15. Contacto
 
-Fondos Dharma
+Juan Pablo Arellano Elizalde
 fondos.dharma@gmail.com
 
 ---
