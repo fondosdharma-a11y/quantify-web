@@ -4,7 +4,7 @@
 
 ## 1. Quiénes somos
 
-Quantify es una aplicación de control financiero personal desarrollada por Fondos Dharma. Para cualquier consulta sobre privacidad puedes escribirnos a fondos.dharma@gmail.com.
+Quantify es una aplicación de control financiero personal desarrollada por Juan Pablo Arellano Elizalde. Para cualquier consulta sobre privacidad puedes escribirnos a fondos.dharma@gmail.com.
 
 ## 2. Qué información recopilamos
 
@@ -76,7 +76,7 @@ Para preguntas, solicitudes o inquietudes sobre privacidad: fondos.dharma@gmail.
 
 ## 1. Who we are
 
-Quantify is a personal finance tracking application developed by Fondos Dharma. For privacy inquiries, contact us at fondos.dharma@gmail.com.
+Quantify is a personal finance tracking application developed by Juan Pablo Arellano Elizalde. For privacy inquiries, contact us at fondos.dharma@gmail.com.
 
 ## 2. What information we collect
 
