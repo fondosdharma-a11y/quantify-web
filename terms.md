@@ -6,7 +6,7 @@
 
 By downloading or using Quantify you accept these terms. If you do not agree, do not use the application.
 
-Quantify is developed and operated by **Fondos Dharma**. Contact: fondos.dharma@gmail.com
+Quantify is developed and operated by **Juan Pablo Arellano Elizalde**. Contact: fondos.dharma@gmail.com
 
 ## 2. What Quantify is
 
@@ -37,13 +37,13 @@ If you create an account:
 
 Quantify offers free features and optional paid plans.
 
-**Billing.** Subscriptions are processed through App Store or Google Play, depending on where you downloaded the app. Fondos Dharma never receives or stores your payment details.
+**Billing.** Subscriptions are processed through App Store or Google Play, depending on where you downloaded the app. Juan Pablo Arellano Elizalde never receives or stores your payment details.
 
 **Automatic renewal.** Subscriptions renew automatically at the end of each period unless you cancel at least 24 hours before expiry. The renewal charge applies within 24 hours before the current period ends.
 
 **How to cancel.** You may cancel anytime from your App Store or Google Play account settings. Cancelling stops future renewals; you keep access until the paid period ends.
 
-**Refunds.** Refunds are governed by the policies of the relevant store, not by Fondos Dharma. Request them directly from Apple or Google.
+**Refunds.** Refunds are governed by the policies of the relevant store, not by Juan Pablo Arellano Elizalde. Request them directly from Apple or Google.
 
 **Price changes.** If we change prices, we will notify you in advance. Changes do not affect a period already paid.
 
@@ -85,7 +85,7 @@ You are responsible for keeping backups. Although we offer cloud backup, we do n
 
 ## 10. Intellectual property
 
-Quantify, its code, design, brand and content are property of Fondos Dharma. The financial data you record is yours and you can export it at any time.
+Quantify, its code, design, brand and content are property of Juan Pablo Arellano Elizalde. The financial data you record is yours and you can export it at any time.
 
 The name "CASHFLOW" and the game of the same name are registered trademarks of their respective owners. Quantify is an independent development inspired by the concept of a personal financial statement, with no affiliation to those marks.
 
@@ -97,7 +97,7 @@ If we permanently discontinue the service, we will give reasonable advance notic
 
 ## 12. Limitation of liability
 
-To the maximum extent permitted by applicable law, Fondos Dharma shall not be liable for economic loss, data loss, lost profits or indirect damages arising from the use of Quantify, including financial decisions you make based on information the app displays.
+To the maximum extent permitted by applicable law, Juan Pablo Arellano Elizalde shall not be liable for economic loss, data loss, lost profits or indirect damages arising from the use of Quantify, including financial decisions you make based on information the app displays.
 
 Our total liability in any case shall not exceed the amount you paid for the application in the twelve months preceding the event giving rise to the claim.
 
@@ -113,7 +113,7 @@ These terms are governed by the laws of the United Mexican States. Any dispute s
 
 ## 15. Contact
 
-Fondos Dharma
+Juan Pablo Arellano Elizalde
 fondos.dharma@gmail.com
 
 ---
