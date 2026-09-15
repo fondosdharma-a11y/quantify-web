@@ -68,12 +68,35 @@ a{color:inherit}
 .nav-links{display:flex;align-items:center;gap:1.75rem}
 .nav-links a{font-size:.875rem;color:var(--muted);text-decoration:none;transition:color .2s}
 .nav-links a:hover{color:var(--ivory)}
-@media(max-width:720px){.nav-links a:not(.nav-cta){display:none}}
 .nav-cta{
   color:var(--ink)!important;background:var(--gold);
   padding:.5rem 1rem;border-radius:6px;font-weight:600;
 }
 .nav-cta:hover{background:#DBB432}
+
+/* Menú hamburguesa: en pantallas angostas los enlaces se pliegan */
+.nav-toggle{
+  display:none;background:none;border:1px solid var(--line);border-radius:6px;
+  width:40px;height:40px;cursor:pointer;padding:0;
+  flex-direction:column;align-items:center;justify-content:center;gap:5px;
+}
+.nav-toggle span{display:block;width:18px;height:2px;background:var(--ivory);transition:transform .25s,opacity .25s}
+.nav-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+.nav-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:720px){
+  .nav-toggle{display:flex}
+  .nav-links{
+    position:absolute;top:64px;left:0;right:0;
+    background:var(--ink);border-bottom:1px solid var(--line);
+    flex-direction:column;align-items:stretch;gap:0;
+    max-height:0;overflow:hidden;transition:max-height .3s ease;
+  }
+  .nav-links.open{max-height:420px}
+  .nav-links a{padding:1rem var(--gut);border-bottom:1px solid var(--line);font-size:1rem}
+  .nav-links a:last-child{border-bottom:0}
+  .nav-cta{margin:.75rem var(--gut);text-align:center;border-radius:8px}
+}
 
 /* ---------- Encabezado principal ---------- */
 .hero{padding:clamp(3.5rem,9vw,7rem) 0 clamp(3rem,7vw,5rem)}
@@ -204,6 +227,8 @@ h2{
   padding:.7rem 1.4rem;border-radius:7px;font-weight:600;font-size:.9rem;transition:background .2s;
 }
 .store-btn:hover{background:#DBB432}
+.store-help{display:block;margin-top:.6rem;font-size:.78rem;color:var(--muted);text-decoration:underline}
+.store-help:hover{color:var(--ivory)}
 .beta-note{
   max-width:44rem;margin:2.5rem auto 0;background:var(--surface);
   border:1px solid var(--line);border-left:2px solid var(--gold);
@@ -212,7 +237,9 @@ h2{
 .beta-note h4{font-family:var(--display);font-size:.95rem;font-weight:500;margin-bottom:.6rem}
 .beta-note p{font-size:.85rem;color:var(--muted);margin-bottom:.6rem}
 .beta-note ol{margin:0 0 0 1.1rem;font-size:.85rem;color:var(--muted)}
-.beta-note li{margin-bottom:.3rem}
+.beta-note li{margin-bottom:.45rem;line-height:1.5}
+.beta-note code{font-family:var(--mono);font-size:.82em;background:var(--raised);padding:.1em .4em;border-radius:4px}
+.beta-note strong{color:var(--ivory)}
 
 
 /* Prueba en navegador: la opción sin fricción, va destacada */
@@ -285,12 +312,16 @@ footer{border-top:1px solid var(--line);padding:clamp(2.5rem,5vw,3.5rem) 0}
       </svg>
       Quantify
     </a>
-    <div class="nav-links">
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="nav-links">
       <a href="#concepto">El índice</a>
       <a href="#funciones">Funciones</a>
       <a href="#descargar">Descargar</a>
+      <a href="#instalar">Cómo instalar</a>
       <a href="#privacidad">Privacidad</a>
-      <a class="nav-cta" href="#avisame">Avísame</a>
+      <a href="/app/" class="nav-cta">Abrir la app</a>
     </div>
   </div>
 </nav>
@@ -538,29 +569,34 @@ footer{border-top:1px solid var(--line);padding:clamp(2.5rem,5vw,3.5rem) 0}
           <line x1="12" y1="15" x2="12" y2="3"/>
         </svg>
         <h3>Descarga directa<span class="beta-tag outline">Beta</span></h3>
-        <p>Versión de prueba para Android, fuera de la tienda. No se actualiza sola.</p>
+        <p>Versión de prueba para Android, unos 50 MB. No se actualiza sola.</p>
         <!-- Cuando tengas el APK: súbelo al repositorio como assets/quantify.apk
              y cambia el href por "assets/quantify.apk" con download -->
         <a class="store-btn" href="https://github.com/fondosdharma-a11y/quantify-web/releases/latest/download/quantify.apk" download="quantify.apk">Descargar APK</a>
+        <a class="store-help" href="#instalar">¿Cómo se instala?</a>
       </div>
     </div>
 
-    <div class="beta-note" id="beta-instrucciones">
-      <h4>Antes de instalar la versión de prueba</h4>
+    <div class="beta-note" id="instalar">
+      <h4>Cómo instalar la versión de prueba en Android</h4>
       <p>
-        Android te advertirá porque la app no viene de Google Play. Es normal
-        al instalar fuera de la tienda, pero conviene que sepas lo que implica:
-        esta versión no se actualiza sola y tendrás que reinstalarla a mano
-        cuando saquemos mejoras.
+        Android desconfía de todo lo que no viene de Google Play. Es normal,
+        pero hace que la instalación tenga un par de pasos extra.
       </p>
       <ol>
-        <li>Descarga el archivo desde el enlace de arriba.</li>
-        <li>Al abrirlo, Android pedirá permiso para instalar desde esta fuente. Acéptalo.</li>
-        <li>Si Play Protect muestra un aviso, elige «Instalar de todos modos».</li>
+        <li>Toca <strong>Descargar APK</strong>. Espera a que termine: pesa unos 50 MB, mejor por WiFi.</li>
+        <li><strong>No lo abras desde el navegador.</strong> Abre la app <strong>Archivos</strong> (o «Mis archivos») de tu teléfono y entra a la carpeta <strong>Descargas</strong>.</li>
+        <li>Toca <code>quantify.apk</code>. Android pedirá permiso para instalar desde esta fuente: acéptalo.</li>
+        <li>Si Play Protect muestra un aviso, toca <strong>Más detalles → Instalar de todos modos</strong>.</li>
       </ol>
-      <p style="margin-top:.9rem;margin-bottom:0">
-        Si prefieres esperar, avísanos abajo y te escribimos el día que esté en
-        las tiendas. Esa versión sí se actualiza sola.
+      <p>
+        <strong>¿Tocaste el archivo y no pasó nada?</strong> Es el síntoma de que el
+        navegador no tiene permiso para instalar apps, y Android no siempre lo
+        pide. Abrirlo desde Archivos, como en el paso 2, lo resuelve.
+      </p>
+      <p style="margin-bottom:0">
+        Esta versión no se actualiza sola. Cuando salga una nueva, descárgala
+        e instálala encima: tus datos se conservan.
       </p>
     </div>
   </div>
@@ -623,6 +659,22 @@ footer{border-top:1px solid var(--line);padding:clamp(2.5rem,5vw,3.5rem) 0}
 
 <script>
 (function(){
+  // Menú hamburguesa
+  var toggle = document.getElementById('nav-toggle');
+  var links  = document.getElementById('nav-links');
+  if (toggle && links) {
+    toggle.addEventListener('click', function(){
+      var abierto = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', abierto ? 'true' : 'false');
+    });
+    links.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        links.classList.remove('open');
+        toggle.setAttribute('aria-expanded','false');
+      });
+    });
+  }
+
   var passive  = document.getElementById('passive');
   var expenses = document.getElementById('expenses');
   var arc      = document.getElementById('arc');
