@@ -63,6 +63,7 @@ Si usas la cuenta o una suscripción, intervienen estos proveedores, cada uno so
 - **Supabase** (Supabase Inc., Estados Unidos): autenticación de tu cuenta y almacenamiento de tu respaldo.
 - **Stripe** (Stripe, Inc.): procesamiento de pagos de la suscripción. Stripe tiene su propia política de privacidad.
 - **Proveedor de facturación electrónica (PAC)** autorizado por el SAT, únicamente si solicitas factura y solo con los datos fiscales que proporciones.
+- **Anthropic** (Anthropic PBC, Estados Unidos), únicamente si activas el Contador digital de Quantify Pro. Cada vez que le haces una pregunta, se le envía tu pregunta y un resumen agregado de tus cuentas del periodo (totales de ingresos, gastos, IVA e ISR estimados); nunca tus facturas una por una, ni datos bancarios, ni contraseñas del SAT. Puedes desactivarlo cuando quieras desde Ajustes y borrar el historial de conversaciones. El Contador digital ofrece orientación general y no constituye asesoría fiscal profesional.
 
 ## 8. Menores de edad
 
@@ -136,7 +137,7 @@ If you use the app without an account and lose your device without having create
 
 Quantify integrates no analytics or advertising services.
 
-If you use an account or a subscription, these providers are involved, each only for what is stated: **Supabase** (Supabase Inc., United States) for authentication and backup storage; **Stripe** (Stripe, Inc.) for subscription payments, under its own privacy policy; and an electronic-invoicing provider (PAC) authorized by the Mexican tax authority, only if you request an invoice and only with the tax data you provide. Without an account, the app works fully offline and contacts no third party.
+If you use an account or a subscription, these providers are involved, each only for what is stated: **Supabase** (Supabase Inc., United States) for authentication and backup storage; **Stripe** (Stripe, Inc.) for subscription payments, under its own privacy policy; and an electronic-invoicing provider (PAC) authorized by the Mexican tax authority, only if you request an invoice and only with the tax data you provide. If you enable the Digital Accountant in Quantify Pro, **Anthropic** (Anthropic PBC, United States) also receives, with each question you ask, that question and an aggregated summary of your accounts for the period (totals of income, expenses, estimated VAT and income tax); never your individual invoices, bank data or tax-authority passwords. You can turn it off at any time from Settings and delete the conversation history. The Digital Accountant provides general guidance and is not professional tax advice. Without an account, the app works fully offline and contacts no third party.
 
 ## 8. Children
 
