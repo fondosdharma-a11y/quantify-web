@@ -53,6 +53,8 @@ Quantify ofrece funciones gratuitas y planes de pago opcionales. La aplicación 
 
 **Cambios de precio.** Si modificamos los precios, te lo notificaremos por correo con al menos 30 días de antelación. Los cambios no afectan al periodo que ya pagaste; aplican a partir de la siguiente renovación.
 
+**Promociones de lanzamiento.** Un descuento de lanzamiento reduce el precio durante un número de periodos determinado (por ejemplo, los primeros tres meses) y después la suscripción se cobra al precio normal vigente, que se muestra antes de pagar. Los descuentos tienen fecha límite para contratarse, no son acumulables con otros y no aplican a periodos ya pagados.
+
 **Límites de la beta.** Mientras Quantify Nube esté en beta, cada cuenta puede almacenar hasta 5 MB de respaldo. Te avisaremos si ese límite cambia.
 
 **Compras de por vida.** Cuando ofrecemos un pago único, este otorga acceso a las funciones incluidas mientras la aplicación siga operando. No constituye una garantía de operación perpetua ni de que funciones futuras queden incluidas.

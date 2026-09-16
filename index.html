@@ -645,17 +645,17 @@ footer{border-top:1px solid var(--line);padding:clamp(2.5rem,5vw,3.5rem) 0}
 
     <div class="nube-grid">
       <div class="plan">
-        <p class="plan-tag">Mensual</p>
+        <p class="plan-tag">Mensual · lanzamiento −50 %</p>
         <h3>Sin compromiso</h3>
-        <p class="plan-price">$49<small> MXN al mes</small></p>
-        <p class="plan-sub">14 días gratis. Cancela cuando quieras.</p>
+        <p class="plan-price">$24.50<small> MXN al mes los primeros 3 meses</small></p>
+        <p class="plan-sub">14 días gratis, luego $24.50 durante 3 meses y después $49. Cancela cuando quieras. Oferta hasta el 16 de diciembre.</p>
         <ul>
           <li>Respaldo de todos tus datos en la nube</li>
           <li>Recuperación si pierdes o cambias de teléfono</li>
           <li>La misma información en celular y navegador</li>
           <li>Sin anuncios, igual que siempre</li>
         </ul>
-        <a class="store-btn" data-nube="https://buy.stripe.com/3cI28s6VG7Li3EN80BgEg0V" href="https://buy.stripe.com/3cI28s6VG7Li3EN80BgEg0V">Empezar 14 días gratis</a>
+        <a class="store-btn" data-nube="https://buy.stripe.com/3cI28s6VG7Li3EN80BgEg0V" data-promo="LANZAMIENTO50" href="https://buy.stripe.com/3cI28s6VG7Li3EN80BgEg0V?prefilled_promo_code=LANZAMIENTO50">Empezar 14 días gratis</a>
       </div>
 
       <div class="plan best">
@@ -676,6 +676,7 @@ footer{border-top:1px solid var(--line);padding:clamp(2.5rem,5vw,3.5rem) 0}
     <p class="nube-note">
       <strong>Cómo funciona:</strong> creas tu cuenta dentro de Quantify con tu correo, pagas aquí con ese mismo correo y la nube se activa sola en unos minutos. El cargo aparece en tu tarjeta como <strong>QUANTIFY NUBE</strong>. Durante los 14 días de prueba no se cobra nada; si cancelas antes, no se cobra nunca. Puedes cancelar desde el enlace que llega a tu correo con cada recibo.
       Mientras estemos en beta, el respaldo se limita a 5 MB por cuenta, más que suficiente para años de movimientos.
+      <strong>Descuento de lanzamiento:</strong> el plan mensual cuesta la mitad durante tus primeros 3 meses. Se aplica solo al pagar, sin escribir códigos; vale para quien se suscriba antes del 16 de diciembre de 2026.
     </p>
   </div>
 </section>
@@ -831,10 +832,11 @@ footer{border-top:1px solid var(--line);padding:clamp(2.5rem,5vw,3.5rem) 0}
   function armar(){
     var correo = campo.value.trim();
     botones.forEach(function(b){
-      var base = b.getAttribute('data-nube');
-      b.href = correo && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo)
-        ? base + '?prefilled_email=' + encodeURIComponent(correo)
-        : base;
+      var base = b.getAttribute('data-nube'), promo = b.getAttribute('data-promo');
+      var partes = [];
+      if (promo) partes.push('prefilled_promo_code=' + encodeURIComponent(promo));
+      if (correo && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo)) partes.push('prefilled_email=' + encodeURIComponent(correo));
+      b.href = partes.length ? base + '?' + partes.join('&') : base;
     });
   }
   campo.addEventListener('input', armar);
