@@ -1,6 +1,6 @@
 # Política de Privacidad de Quantify
 
-**Última actualización:** 30 de agosto de 2026
+**Última actualización:** 16 de septiembre de 2026
 
 ## 1. Quiénes somos
 
@@ -12,7 +12,11 @@ Quantify es una aplicación de control financiero personal desarrollada por Juan
 
 **Si usas Quantify sin cuenta (comportamiento por defecto):** no recopilamos absolutamente nada. Toda tu información —ingresos, gastos, activos, deudas, metas y preferencias— se guarda exclusivamente en el almacenamiento local de tu dispositivo. No tenemos acceso a ella en ningún momento.
 
-**Si decides crear una cuenta para respaldar tus datos:** recopilamos únicamente tu dirección de correo electrónico (para identificar tu cuenta y verificarla) y la información financiera que tú elijas subir a la nube. Nunca pedimos tu nombre, número de teléfono, ni credenciales bancarias.
+**Si decides crear una cuenta para respaldar tus datos (Quantify Nube o Quantify Pro):** recopilamos tu dirección de correo electrónico (para identificar y verificar tu cuenta), el nombre que elijas mostrar, y la información financiera que tú decidas subir como respaldo. Nunca pedimos tu número de teléfono ni credenciales bancarias.
+
+**Si contratas una suscripción:** el pago lo procesa Stripe, que recibe tus datos de tarjeta directamente; nosotros nunca los vemos ni los guardamos. De Stripe conservamos únicamente el identificador de tu suscripción, el plan contratado y las fechas de vigencia, para saber qué funciones activar.
+
+**Si pides factura:** guardamos los datos fiscales que nos proporciones (RFC, razón social, régimen, uso de CFDI y código postal) y una referencia a cada factura emitida. Solo se usan para timbrar tus facturas.
 
 La cuenta existe solo para que puedas recuperar tu información si pierdes el dispositivo o quieres usar la app en varios equipos. Puedes usar Quantify indefinidamente sin crearla.
 
@@ -34,9 +38,11 @@ Quantify utiliza únicamente los siguientes permisos, y solo cuando tú inicias 
 
 ## 5. Dónde se guardan tus datos y por cuánto tiempo
 
-Si creas una cuenta, tu información se almacena en Google Firebase (Firestore y Firebase Authentication), un servicio de Google LLC, y viaja cifrada en tránsito. El acceso está restringido por reglas de seguridad que permiten que únicamente tu cuenta lea o escriba tus propios datos.
+Si creas una cuenta, tu información se almacena en Supabase, un servicio de Supabase Inc., en servidores ubicados en Estados Unidos (región us-east-2, Ohio). Viaja cifrada en tránsito y se guarda cifrada en reposo. El acceso está restringido por reglas de seguridad a nivel de fila que permiten que únicamente tu cuenta lea o escriba tus propios datos; ni siquiera el desarrollador puede leer tu respaldo desde la aplicación.
 
-Conservamos tu información mientras tu cuenta exista. Si eliminas tu cuenta, borramos tus datos de la nube de forma permanente.
+Al transferirse fuera de México, tus datos quedan protegidos por las medidas contractuales y técnicas del proveedor y por esta política. Si no estás de acuerdo con esa transferencia, puedes usar Quantify sin cuenta: en ese caso nada sale de tu dispositivo.
+
+**Cuánto tiempo.** Conservamos tu respaldo mientras tu suscripción esté vigente. Cuando termina, el respaldo se conserva 90 días más por si decides volver, y después se elimina de forma permanente. Si eliminas tu cuenta, borramos todos tus datos de la nube de inmediato. Los registros de facturación se conservan el tiempo que exige la ley fiscal mexicana.
 
 ## 6. Tu control sobre los datos
 
@@ -50,7 +56,13 @@ Si usas la app sin cuenta y pierdes tu dispositivo sin haber creado un respaldo,
 
 ## 7. Servicios de terceros
 
-La versión actual de Quantify no integra servicios de análisis, publicidad ni procesamiento de datos de terceros. La aplicación funciona completamente sin conexión a internet.
+Quantify no integra servicios de análisis ni de publicidad. Sin cuenta, la aplicación funciona completamente sin conexión a internet y no se comunica con ningún tercero.
+
+Si usas la cuenta o una suscripción, intervienen estos proveedores, cada uno solo para lo que se indica:
+
+- **Supabase** (Supabase Inc., Estados Unidos): autenticación de tu cuenta y almacenamiento de tu respaldo.
+- **Stripe** (Stripe, Inc.): procesamiento de pagos de la suscripción. Stripe tiene su propia política de privacidad.
+- **Proveedor de facturación electrónica (PAC)** autorizado por el SAT, únicamente si solicitas factura y solo con los datos fiscales que proporciones.
 
 ## 8. Menores de edad
 
