@@ -296,6 +296,26 @@ footer{border-top:1px solid var(--line);padding:clamp(2.5rem,5vw,3.5rem) 0}
 .foot-links a{font-size:.85rem;color:var(--muted);text-decoration:none}
 .foot-links a:hover{color:var(--ivory);text-decoration:underline}
 .legal{margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid var(--line);font-size:.78rem;color:var(--dim);line-height:1.7}
+
+/* Quantify Nube */
+.nube-grid{display:grid;grid-template-columns:1fr;gap:1rem;max-width:56rem;margin:0 auto}
+@media(min-width:720px){.nube-grid{grid-template-columns:1fr 1fr}}
+.plan{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1.6rem;display:flex;flex-direction:column}
+.plan.best{border-color:var(--gold-deep);background:var(--gold-soft)}
+.plan-tag{font-family:var(--mono);font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);margin-bottom:.7rem}
+.plan h3{font-family:var(--display);font-size:1.15rem;font-weight:500;margin-bottom:.2rem}
+.plan-price{font-family:var(--display);font-size:2.2rem;letter-spacing:-.02em;margin:.4rem 0 .1rem}
+.plan-price small{font-family:var(--body);font-size:.9rem;color:var(--muted);letter-spacing:0}
+.plan-sub{font-size:.85rem;color:var(--muted);margin-bottom:1rem}
+.plan ul{list-style:none;padding:0;margin:0 0 1.2rem;flex:1}
+.plan li{font-size:.9rem;color:var(--muted);padding:.3rem 0 .3rem 1.4rem;position:relative}
+.plan li::before{content:"";position:absolute;left:0;top:.75rem;width:.55rem;height:.55rem;border-radius:50%;background:var(--gold)}
+.nube-mail{max-width:56rem;margin:0 auto 1.2rem;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1.2rem 1.4rem;display:flex;flex-wrap:wrap;gap:.8rem;align-items:center}
+.nube-mail label{flex:1 1 100%;font-size:.85rem;color:var(--muted)}
+.nube-mail input{flex:1 1 16rem;background:var(--ink);color:var(--ivory);border:1px solid var(--line);border-radius:9px;padding:.75rem .9rem;font:inherit;font-size:1rem}
+.nube-mail input:focus{outline:2px solid var(--gold);outline-offset:2px}
+.nube-note{max-width:56rem;margin:1.2rem auto 0;font-size:.83rem;color:var(--muted);line-height:1.6}
+.nube-note strong{color:var(--ivory)}
 </style>
 </head>
 <body>
@@ -319,6 +339,7 @@ footer{border-top:1px solid var(--line);padding:clamp(2.5rem,5vw,3.5rem) 0}
       <a href="#concepto">El índice</a>
       <a href="#funciones">Funciones</a>
       <a href="#descargar">Descargar</a>
+      <a href="#nube">Nube</a>
       <a href="#instalar">Cómo instalar</a>
       <a href="#privacidad">Privacidad</a>
       <a href="/app/" class="nav-cta">Abrir la app</a>
@@ -609,6 +630,57 @@ footer{border-top:1px solid var(--line);padding:clamp(2.5rem,5vw,3.5rem) 0}
 </section>
 
 <!-- LLAMADO -->
+<!-- NUBE -->
+<section id="nube">
+  <div class="wrap">
+    <div class="sec-head" style="text-align:center;margin-inline:auto">
+      <h2>Quantify Nube<span class="beta-tag outline">Beta</span></h2>
+      <p>La app es gratis y lo seguirá siendo. La nube es para quien quiere que sus números sobrevivan a un teléfono perdido y vivan iguales en el celular y en la computadora.</p>
+    </div>
+
+    <div class="nube-mail">
+      <label for="nube-correo">Escribe el correo con el que creaste tu cuenta en Quantify. Así el pago se conecta solo con tu cuenta.</label>
+      <input type="email" id="nube-correo" placeholder="tu@correo.com" autocomplete="email">
+    </div>
+
+    <div class="nube-grid">
+      <div class="plan">
+        <p class="plan-tag">Mensual</p>
+        <h3>Sin compromiso</h3>
+        <p class="plan-price">$49<small> MXN al mes</small></p>
+        <p class="plan-sub">14 días gratis. Cancela cuando quieras.</p>
+        <ul>
+          <li>Respaldo de todos tus datos en la nube</li>
+          <li>Recuperación si pierdes o cambias de teléfono</li>
+          <li>La misma información en celular y navegador</li>
+          <li>Sin anuncios, igual que siempre</li>
+        </ul>
+        <a class="store-btn" data-nube="https://buy.stripe.com/3cI28s6VG7Li3EN80BgEg0V" href="https://buy.stripe.com/3cI28s6VG7Li3EN80BgEg0V">Empezar 14 días gratis</a>
+      </div>
+
+      <div class="plan best">
+        <p class="plan-tag">Anual · ahorras 3 meses</p>
+        <h3>Un pago al año</h3>
+        <p class="plan-price">$449<small> MXN al año</small></p>
+        <p class="plan-sub">14 días gratis. Equivale a $37 al mes.</p>
+        <ul>
+          <li>Todo lo del plan mensual</li>
+          <li>Un solo cargo, sin sorpresas cada mes</li>
+          <li>Precio congelado durante el año pagado</li>
+          <li>Prioridad en las funciones nuevas de la nube</li>
+        </ul>
+        <a class="store-btn" data-nube="https://buy.stripe.com/00wdRa5RCc1yb7fbcNgEg0W" href="https://buy.stripe.com/00wdRa5RCc1yb7fbcNgEg0W">Empezar 14 días gratis</a>
+      </div>
+    </div>
+
+    <p class="nube-note">
+      <strong>Cómo funciona:</strong> creas tu cuenta dentro de Quantify con tu correo, pagas aquí con ese mismo correo y la nube se activa sola en unos minutos. El cargo aparece en tu tarjeta como <strong>QUANTIFY NUBE</strong>. Durante los 14 días de prueba no se cobra nada; si cancelas antes, no se cobra nunca. Puedes cancelar desde el enlace que llega a tu correo con cada recibo.
+      Mientras estemos en beta, el respaldo se limita a 5 MB por cuenta, más que suficiente para años de movimientos.
+    </p>
+  </div>
+</section>
+
+
 <section class="cta" id="avisame">
   <div class="wrap">
     <h2>Quantify llega pronto a iOS y Android.</h2>
@@ -749,6 +821,24 @@ footer{border-top:1px solid var(--line);padding:clamp(2.5rem,5vw,3.5rem) 0}
       + '?subject=' + encodeURIComponent('Avísame cuando salga Quantify')
       + '&body=' + encodeURIComponent('Quiero que me avisen cuando Quantify esté disponible.\n\nMi correo: ' + email);
   });
+})();
+
+// Quantify Nube: conecta el pago con el correo de la cuenta
+(function(){
+  var campo = document.getElementById('nube-correo');
+  if (!campo) return;
+  var botones = document.querySelectorAll('[data-nube]');
+  function armar(){
+    var correo = campo.value.trim();
+    botones.forEach(function(b){
+      var base = b.getAttribute('data-nube');
+      b.href = correo && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo)
+        ? base + '?prefilled_email=' + encodeURIComponent(correo)
+        : base;
+    });
+  }
+  campo.addEventListener('input', armar);
+  armar();
 })();
 </script>
 </body>

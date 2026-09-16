@@ -1,6 +1,6 @@
 # Términos de Servicio de Quantify
 
-**Última actualización:** 30 de agosto de 2026
+**Última actualización:** 16 de septiembre de 2026
 
 ## 1. Aceptación
 
@@ -37,17 +37,23 @@ Si decides crear una cuenta:
 
 ## 5. Suscripciones
 
-Quantify ofrece funciones gratuitas y planes de pago opcionales.
+Quantify ofrece funciones gratuitas y planes de pago opcionales. La aplicación funciona completa sin pagar nada; la suscripción **Quantify Nube** añade el respaldo en la nube y la sincronización entre dispositivos.
 
-**Cobro.** Las suscripciones se procesan a través de App Store o Google Play, según la tienda desde la que hayas descargado la aplicación. Juan Pablo Arellano Elizalde no recibe ni almacena tus datos de pago en ningún momento.
+**Dónde se contrata.** Quantify Nube se contrata en quantifycash.app y el cobro lo procesa Stripe. Si en el futuro ofrecemos suscripciones dentro de la aplicación descargada de App Store o Google Play, esas se procesarán a través de la tienda correspondiente y se regirán por sus reglas. Juan Pablo Arellano Elizalde no recibe ni almacena tus datos de tarjeta en ningún caso.
 
-**Renovación automática.** Las suscripciones se renuevan automáticamente al final de cada periodo, salvo que canceles al menos 24 horas antes del vencimiento. El cargo de renovación se aplica dentro de las 24 horas previas al término del periodo vigente.
+**Precio y periodo de prueba.** Los precios vigentes se muestran en quantifycash.app antes de pagar. Los planes incluyen 14 días de prueba sin costo; durante ese periodo puedes cancelar sin que se realice ningún cargo. Los precios se expresan en pesos mexicanos.
 
-**Cómo cancelar.** Puedes cancelar en cualquier momento desde los ajustes de tu cuenta de App Store o Google Play. Cancelar detiene renovaciones futuras; conservas el acceso hasta que termine el periodo ya pagado.
+**Renovación automática.** Al terminar la prueba, y después al final de cada periodo mensual o anual, la suscripción se renueva automáticamente y se cobra al método de pago registrado, salvo que hayas cancelado antes.
 
-**Reembolsos.** Los reembolsos se rigen por las políticas de la tienda correspondiente, no por Juan Pablo Arellano Elizalde. Debes solicitarlos directamente a Apple o Google.
+**Cómo cancelar.** Puedes cancelar en cualquier momento desde el enlace de gestión de suscripción que aparece en cada recibo de Stripe, o escribiendo a fondos.dharma@gmail.com. Cancelar detiene renovaciones futuras; conservas la nube hasta que termine el periodo ya pagado. Si contrataste dentro de una tienda de aplicaciones, la cancelación se hace desde los ajustes de esa tienda.
 
-**Cambios de precio.** Si modificamos los precios, te lo notificaremos con antelación. Los cambios no afectan al periodo que ya pagaste.
+**Qué pasa al terminar.** Cuando la suscripción termina, tus datos siguen en tu dispositivo y puedes seguir usando Quantify gratis. El respaldo en la nube deja de actualizarse y se conserva 90 días más por si decides volver; pasado ese plazo se elimina de forma permanente. Puedes descargar tu respaldo en cualquier momento antes.
+
+**Reembolsos.** Si contrataste en quantifycash.app y algo no funcionó como se describe, escríbenos dentro de los 14 días siguientes al cargo y lo revisamos; los reembolsos por error nuestro se devuelven completos. No reembolsamos periodos ya disfrutados ni renovaciones que no se cancelaron a tiempo. Las compras hechas en App Store o Google Play se rigen por las políticas de reembolso de Apple o Google y deben solicitarse ahí.
+
+**Cambios de precio.** Si modificamos los precios, te lo notificaremos por correo con al menos 30 días de antelación. Los cambios no afectan al periodo que ya pagaste; aplican a partir de la siguiente renovación.
+
+**Límites de la beta.** Mientras Quantify Nube esté en beta, cada cuenta puede almacenar hasta 5 MB de respaldo. Te avisaremos si ese límite cambia.
 
 **Compras de por vida.** Cuando ofrecemos un pago único, este otorga acceso a las funciones incluidas mientras la aplicación siga operando. No constituye una garantía de operación perpetua ni de que funciones futuras queden incluidas.
 
