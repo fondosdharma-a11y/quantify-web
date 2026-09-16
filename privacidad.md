@@ -118,9 +118,9 @@ Quantify uses only the following permissions, and only when you initiate the act
 
 ## 5. Where your data is stored and for how long
 
-If you create an account, your information is stored in Google Firebase (Firestore and Firebase Authentication), a service of Google LLC, and travels encrypted in transit. Access is restricted by security rules allowing only your own account to read or write your data.
+If you create an account, your information is stored in Supabase, a service of Supabase Inc., on servers located in the United States (us-east-2, Ohio). It travels encrypted in transit and is stored encrypted at rest. Access is restricted by row-level security rules so that only your account can read or write your own data; not even the developer can read your backup from the app. If you do not agree with this transfer outside your country, you can use Quantify without an account, in which case nothing leaves your device.
 
-We retain your information for as long as your account exists. If you delete your account, we permanently erase your data from the cloud.
+We retain your backup while your subscription is active. When it ends, the backup is kept for 90 more days in case you return, and is then permanently deleted. If you delete your account, we erase all your cloud data immediately. Billing records are kept for as long as Mexican tax law requires. If you subscribe, Stripe processes the payment and receives your card details directly; we never see or store them. We keep only your subscription identifier, plan, and validity dates.
 
 ## 6. Your control over your data
 
@@ -136,7 +136,7 @@ If you use the app without an account and lose your device without having create
 
 Quantify integrates no analytics or advertising services.
 
-The only third party involved is **Google Firebase**, and only if you choose to create an account: it is used to authenticate your email and store your backup. If you do not create an account, the app communicates with no server.
+If you use an account or a subscription, these providers are involved, each only for what is stated: **Supabase** (Supabase Inc., United States) for authentication and backup storage; **Stripe** (Stripe, Inc.) for subscription payments, under its own privacy policy; and an electronic-invoicing provider (PAC) authorized by the Mexican tax authority, only if you request an invoice and only with the tax data you provide. Without an account, the app works fully offline and contacts no third party.
 
 ## 8. Children
 
